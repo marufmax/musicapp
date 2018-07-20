@@ -1,5 +1,6 @@
 <?php
   include("includes/handlers/registerHandler.php");
+  include("includes/handlers/loginHandler.php");
 ?>
 <!DOCTYPE html>
 <html>
