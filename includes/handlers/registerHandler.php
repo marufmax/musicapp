@@ -18,21 +18,7 @@ function sanitizeFormString($input)
     return $input;
 }
 
-function validateUsername($un)
-{
-}
-function validateFirstName($fn)
-{
-}
-function validateLastName($ln)
-{
-}
-function validateEmail($em, $em2)
-{
-}
-function validatePassword($pw, $pw2)
-{
-}
+
 
 
 
@@ -46,9 +32,8 @@ if (isset($_POST['registerButton'])) {
     $password = sanitizeFormPassword($_POST['password']);
     $password2 = sanitizeFormPassword($_POST['password2']);
 
-    validateUsername($username);
-    validateFirstName($firstName);
-    validateLastName($lastName);
-    validateEmail($email, $email2);
-    validatePassword($password, $password2);
+    $wasSuccessfull = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
+    if ($wasSuccessfull) {
+        head("Location: index.php");
+    }
 }

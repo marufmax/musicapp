@@ -1,4 +1,7 @@
 <?php
+  include("includes/classes/Account.php");
+  include("includes/classes/Constants.php");
+  $account = new Account();
   include("includes/handlers/registerHandler.php");
   include("includes/handlers/loginHandler.php");
 ?>
@@ -17,6 +20,7 @@
     <form id="loginForm" actions="register.php" method="POST">
     <h2>Login to your account</h2>
     <p>
+
       <label for="loginUsername">Username</label>
       <input id="loginUsername" type="text" name="loginUsername" placeholder="e.g Maruf Alom" required>
     </p>
@@ -32,6 +36,7 @@
     <form id="registerForm" actions="register.php" method="POST">
     <h2>Create your free account</h2>
     <p>
+     <?php echo $account->getError(Constants::$firstNameCharLen); ?>
       <label for="username">Username</label>
       <input id="username" type="text" name="username" placeholder="e.g Maruf Alom" required>
     </p>
