@@ -11,4 +11,5 @@ class Constants
     public static $firstNameCharLen = "Your First Name must be between 2 or 25 charecter";
     public static $usernameTaken = "This username is taken, choose another one";
     public static $emailTaken = "This Email already registered. Please log in or forget password";
+    public static $loginFailed = "Username or Password did not matched!";
 }
