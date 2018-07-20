@@ -9,4 +9,6 @@ class Constants
     public static $invalidEmail = "Must have to enter a valid email";
     public static $lastNameCharLen = "Your Last Name must be between 2 or 25 charecter";
     public static $firstNameCharLen = "Your First Name must be between 2 or 25 charecter";
+    public static $usernameTaken = "This username is taken, choose another one";
+    public static $emailTaken = "This Email already registered. Please log in or forget password";
 }

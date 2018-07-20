@@ -1,4 +1,5 @@
 <?php
 if (isset($_POST['loginButton'])) {
-    echo "Login Pressed";
+    $username = $_POST['loginUsername'];
+    $password = $_POST['loginPassword']
 }
