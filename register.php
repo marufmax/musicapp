@@ -1,3 +1,6 @@
+<?php
+  include("includes/handlers/registerHandler.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +24,7 @@
       <input id="loginPassword" type="password" name="loginPassword" placeholder="******" required>
     </p>
 
-    <button class="btn" type="submit"> Log In </button>
+    <button class="btn" name="loginButton" type="submit"> Log In </button>
     </form>
 
 
@@ -59,7 +62,7 @@
       <input id="password2" type="text" name="password2" placeholder="******" required>
     </p>
 
-    <button class="btn" type="submit"> Sign Up </button>
+    <button class="btn" name="registerButton" type="submit"> Sign Up </button>
     </form>
    </div>
 </body>
